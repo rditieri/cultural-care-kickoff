@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Cultural Care Kickoff Prompts</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+html,body{margin:0}
+
+/* Layout: one phone-first column; a plum masthead like the printed card, then the five moves as numbered groups of copyable prompt cards. */
+:root{
+  --bg:#faf7f9; --surface:#ffffff; --fg:#2a1623; --muted:#6e5a67; --rule:#e7dbe3;
+  --plum:#4d0d39; --on-plum:#ffffff; --eyebrow:#ff8cc6; --accent:#c8177a; --on-accent:#ffffff; --mark:#f7e3ef; --mark-fg:#8a0f55; --btn:#4d0d39; --on-btn:#ffffff;
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1a1017; --surface:#241720; --fg:#f3e9ef; --muted:#b9a5b2; --rule:#3b2935;
+  --plum:#3a0a2b; --on-plum:#ffffff; --eyebrow:#ff8cc6; --accent:#ff5fb0; --on-accent:#2a0a1e; --mark:#3d1a31; --mark-fg:#ffb3da; --btn:#9a2a78; --on-btn:#ffffff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1a1017; --surface:#241720; --fg:#f3e9ef; --muted:#b9a5b2; --rule:#3b2935;
+  --plum:#3a0a2b; --on-plum:#ffffff; --eyebrow:#ff8cc6; --accent:#ff5fb0; --on-accent:#2a0a1e; --mark:#3d1a31; --mark-fg:#ffb3da; --btn:#9a2a78; --on-btn:#ffffff; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--body);}
+.mast{background:var(--plum);color:var(--on-plum);padding-block:28px 26px;padding-inline:16px}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px}
+.mast .wrap{padding-inline:0}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--eyebrow);margin:0 0 8px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(28px,7vw,40px);line-height:1.1;margin:0 0 12px;text-wrap:balance}
+.mast p{margin:0;max-width:60ch}
+main{padding-block:20px 48px}
+.start{display:grid;gap:12px;margin-bottom:24px}
+.box{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px}
+.box h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 6px;font-weight:900}
+.box p,.box ol{margin:0}
+.box ol{padding-left:20px}
+.rule{border-left:4px solid var(--accent)}
+code,.at{font-family:var(--body);font-weight:700;color:var(--accent)}
+nav.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+nav.jump a{font-size:13px;font-weight:700;color:var(--fg);text-decoration:none;border:1px solid var(--rule);border-radius:999px;padding:6px 12px;background:var(--surface)}
+nav.jump a:focus-visible,nav.jump a:hover{border-color:var(--accent);color:var(--accent)}
+.move{margin-bottom:32px;scroll-margin-top:12px}
+.move-h{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-weight:900}
+.num-alt{background:var(--plum);color:var(--on-plum)}
+.move-h h2{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.2;margin:2px 0 0;text-wrap:balance}
+.sub{margin:2px 0 0;color:var(--muted);font-size:14px}
+.prompt{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;margin-bottom:12px;min-width:0}
+.p-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;align-items:baseline;margin-bottom:8px}
+.p-top h3{margin:0;font-size:17px;font-weight:900}
+.at{font-size:13px}
+.ptext{margin:0 0 12px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.55 var(--body);color:var(--fg)}
+mark{background:var(--mark);color:var(--mark-fg);border-radius:3px;padding:0 2px;font-weight:700}
+.copy{font:700 14px var(--body);border:0;border-radius:8px;padding:10px 16px;background:var(--btn);color:var(--on-btn);cursor:pointer;min-height:44px}
+.copy:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.copy.done{background:var(--accent);color:var(--on-accent)}
+.paper ol{display:grid;gap:6px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--rule);padding-top:16px}
+footer b{color:var(--fg)}
+@media (prefers-reduced-motion:no-preference){.copy{transition:background .15s}}
+</style>
+</head>
+<body>
+
+<header class="mast"><div class="wrap">
+<p class="eyebrow">Cultural Care US Kickoff · Oct 1</p>
+<h1>Every prompt, in one place</h1>
+<p>The 13 moves from your card, ready to copy. Works on your phone, and works even if Langdock is down.</p>
+</div></header>
+<main class="wrap">
+<div class="start">
+  <div class="box"><h2>In Langdock</h2><p>Start a new chat and type <code>@Cultural Care Context</code> for the company background. Then type <code>@</code> and the prompt name. The prompts are in <b>Prompts</b>, under the <b>Cultural Care Workspace</b>. Fill in the fields.</p></div>
+  <div class="box"><h2>No Langdock?</h2><p>Tap <b>Copy prompt</b>, paste it into any AI tool Cultural Care has approved, and replace the <mark>[brackets]</mark> with your own details.</p></div>
+  <div class="box rule"><h2>No personal info</h2><p>No names, emails, or anything that identifies a family or au pair. Feedback like NPS comments is fine with the names out. Describe the situation instead.</p></div>
+</div>
+<nav class="jump" aria-label="Jump to a move">
+  <a href="#it-can-read-more-than-you-can">Read</a><a href="#it-can-be-someone-else">Someone else</a><a href="#it-will-argue-with-you">Argue</a><a href="#it-can-remember-for-you">Remember</a><a href="#it-can-be-wrong-cheaply-so-ask-for-volume">Volume</a><a href="#hit-a-wall">Hit a wall</a><a href="#on-paper">On paper</a>
+</nav>
+<section class="move" id="it-can-read-more-than-you-can"><header class="move-h"><span class="num">1</span><div><h2>It can read more than you can</h2><p class="sub">Hand it the pile.</p></div></header>
+<article class="prompt" id="p-read-the-pile"><div class="p-top"><h3>Read the pile</h3><span class="at">@Read the pile</span></div><pre class="ptext" id="t-read-the-pile">Here are <mark>[the notes, tickets, survey comments or emails]</mark> (no names or personal details):
+
+<mark>[paste them here]</mark>
+
+What are the 3-5 things I most need to know? What pattern am I not seeing?</pre><button type="button" class="copy" data-target="t-read-the-pile" aria-label="Copy Read the pile prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="it-can-be-someone-else"><header class="move-h"><span class="num">2</span><div><h2>It can be someone else</h2><p class="sub">Hear any customer out in 30 seconds.</p></div></header>
+<article class="prompt" id="p-roleplay"><div class="p-top"><h3>Roleplay</h3><span class="at">@Roleplay</span></div><pre class="ptext" id="t-roleplay">You are <mark>[who: a host family deciding on Cultural Care, an au pair in her first month, a family that just left us]</mark>. Stay in character.
+
+Here&#x27;s something we&#x27;d send you or say to you:
+
+<mark>[paste it here]</mark>
+
+Give me your honest gut reaction. What doesn&#x27;t land, what&#x27;s missing &amp; what would make you lose trust in us?</pre><button type="button" class="copy" data-target="t-roleplay" aria-label="Copy Roleplay prompt">Copy prompt</button></article>
+<article class="prompt" id="p-steelman-the-competitor"><div class="p-top"><h3>Steelman the competitor</h3><span class="at">@Steelman the competitor</span></div><pre class="ptext" id="t-steelman-the-competitor">You run strategy at a competing au pair agency. Why would a family or au pair pick you over us? Where are we most vulnerable?</pre><button type="button" class="copy" data-target="t-steelman-the-competitor" aria-label="Copy Steelman the competitor prompt">Copy prompt</button></article>
+<article class="prompt" id="p-the-translator"><div class="p-top"><h3>The translator</h3><span class="at">@The translator</span></div><pre class="ptext" id="t-the-translator">Explain this to <mark>[who: a new host family, a new teammate, someone on the other side of the business]</mark> without jargon:
+
+<mark>[paste it here]</mark></pre><button type="button" class="copy" data-target="t-the-translator" aria-label="Copy The translator prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="it-will-argue-with-you"><header class="move-h"><span class="num">3</span><div><h2>It will argue with you</h2><p class="sub">Ask it to push back and it will.</p></div></header>
+<article class="prompt" id="p-interrogate-me"><div class="p-top"><h3>Interrogate me</h3><span class="at">@Interrogate me</span></div><pre class="ptext" id="t-interrogate-me">I&#x27;m going to tell you my plan. Push back. Find the weak points. Don&#x27;t let me off the hook.
+
+My plan:
+<mark>[paste your plan]</mark></pre><button type="button" class="copy" data-target="t-interrogate-me" aria-label="Copy Interrogate me prompt">Copy prompt</button></article>
+<article class="prompt" id="p-pre-mortem"><div class="p-top"><h3>Pre-mortem</h3><span class="at">@Pre-mortem</span></div><pre class="ptext" id="t-pre-mortem">It&#x27;s a year from now and <mark>[this project, idea or plan]</mark> failed. What went wrong? Be specific.</pre><button type="button" class="copy" data-target="t-pre-mortem" aria-label="Copy Pre-mortem prompt">Copy prompt</button></article>
+<article class="prompt" id="p-what-would-have-to-be-true"><div class="p-top"><h3>What would have to be true</h3><span class="at">@What would have to be true</span></div><pre class="ptext" id="t-what-would-have-to-be-true">For <mark>[this]</mark> to succeed, what would have to be true - about our families, our au pairs, our team &amp; our process? What aren&#x27;t we doing yet?</pre><button type="button" class="copy" data-target="t-what-would-have-to-be-true" aria-label="Copy What would have to be true prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="it-can-remember-for-you"><header class="move-h"><span class="num">4</span><div><h2>It can remember for you</h2><p class="sub">Set it up once, reuse forever.</p></div></header>
+<article class="prompt" id="p-second-brain"><div class="p-top"><h3>Second brain</h3><span class="at">@Second brain</span></div><pre class="ptext" id="t-second-brain">I&#x27;m building a short &quot;about me&quot; doc that I&#x27;ll reuse with Langdock, so every chat starts out knowing who I am. The company background lives in the Cultural Care Context knowledge base, so this one is about me.
+
+My name: <mark>[my name]</mark>
+My role: <mark>[my role]</mark>
+My team (who, size, what we own): <mark>[my team]</mark>
+My main day to day responsibilities: <mark>[my responsibilities]</mark>
+My professional strengths &amp; where I shine: <mark>[my strengths]</mark>
+My main day to day responsibilities: <mark>[my responsibilities]</mark>
+My professional strengths &amp; where I shine: <mark>[my strengths]</mark>
+What my team is trying to hit this year: <mark>[what my team is trying to hit this year]</mark>
+The pillar my work supports most: <mark>[Accelerate Sales, Optimize Matching or Deliver Exceptional Experiences]</mark>
+My biggest challenge right now: <mark>[my biggest challenge right now (1-2 honest sentences)]</mark>
+What I want you to challenge me on: <mark>[what I want you to challenge me on]</mark>
+
+How I want you to engage:
+- When I ask you to argue with me: do it fully. Don&#x27;t hedge.
+- When I ask for ideas: give me volume first, quality second.
+- When I ask what I&#x27;m missing: be honest, even if it&#x27;s uncomfortable.
+- When I share a plan: assume I want critique, not validation, unless I say otherwise.
+
+Build the doc in three steps:
+1. Write it up under clear headings. Keep my words &amp; specifics. Don&#x27;t invent facts, names or numbers about me or my team.
+2. Add a section called &quot;How to help me best&quot;: based on what I told you, what help will matter most to me, what to push me on &amp; what to skip. If you have the Cultural Care Context, add a line on how my work connects to our goals. Mark anything you&#x27;re inferring as &quot;(my read)&quot;.
+3. Ask me 3 questions whose answers would make this doc much more useful. When I answer, rewrite the full doc with my answers folded in, ready to save.</pre><button type="button" class="copy" data-target="t-second-brain" aria-label="Copy Second brain prompt">Copy prompt</button></article>
+<article class="prompt" id="p-test-prompt"><div class="p-top"><h3>Test prompt</h3><span class="at">@Test prompt</span></div><pre class="ptext" id="t-test-prompt">Based on what you know about me - what&#x27;s the single biggest thing I&#x27;m probably not giving enough attention to right now?</pre><button type="button" class="copy" data-target="t-test-prompt" aria-label="Copy Test prompt prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="it-can-be-wrong-cheaply-so-ask-for-volume"><header class="move-h"><span class="num">5</span><div><h2>It can be wrong cheaply - so ask for volume</h2><p class="sub">Bad ideas cost nothing here.</p></div></header>
+<article class="prompt" id="p-ask-for-30-not-5"><div class="p-top"><h3>Ask for 30, not 5</h3><span class="at">@Ask for 30, not 5</span></div><pre class="ptext" id="t-ask-for-30-not-5">Give me 30 ways to <mark>[solve, approach or frame]</mark> this. Don&#x27;t filter for quality - just volume.
+
+<mark>[this: describe the problem]</mark></pre><button type="button" class="copy" data-target="t-ask-for-30-not-5" aria-label="Copy Ask for 30, not 5 prompt">Copy prompt</button></article>
+<article class="prompt" id="p-inversion"><div class="p-top"><h3>Inversion</h3><span class="at">@Inversion</span></div><pre class="ptext" id="t-inversion">What&#x27;s the opposite of how we do this today? What would we do if we were trying to fail at it?
+
+How we do it today:
+<mark>[describe it]</mark></pre><button type="button" class="copy" data-target="t-inversion" aria-label="Copy Inversion prompt">Copy prompt</button></article>
+<article class="prompt" id="p-analogy-transfer"><div class="p-top"><h3>Analogy transfer</h3><span class="at">@Analogy transfer</span></div><pre class="ptext" id="t-analogy-transfer">How would <mark>[who: a dating app, an airline, a hotel, a school]</mark> solve this problem? Give me 5 ideas we could borrow.
+
+The problem:
+<mark>[describe it]</mark></pre><button type="button" class="copy" data-target="t-analogy-transfer" aria-label="Copy Analogy transfer prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="hit-a-wall"><header class="move-h"><span class="num num-alt" aria-hidden="true">&#8634;</span><div><h2>Hit a wall</h2><p class="sub">Ask it how.</p></div></header>
+<article class="prompt" id="p-hit-a-wall"><div class="p-top"><h3>Hit a wall</h3><span class="at">@Hit a wall</span></div><pre class="ptext" id="t-hit-a-wall">That didn&#x27;t work. What would you need from me, or what would I need to change, to get this right? Give me three different ways to try it.</pre><button type="button" class="copy" data-target="t-hit-a-wall" aria-label="Copy Hit a wall prompt">Copy prompt</button></article>
+</section>
+<section class="move" id="on-paper">
+<header class="move-h"><span class="num num-alt" aria-hidden="true">&#9998;</span><div><h2>The breakout, on paper</h2><p class="sub">If the tech fails, run it as a group conversation.</p></div></header>
+<div class="box paper"><ol>
+<li>Pick one team's commitment from this morning.</li>
+<li>Pre-mortem it: it's a year from now and it failed. Why?</li>
+<li>Flip it: what would have to be true? What aren't we doing yet?</li>
+<li>Come up with 30 ideas, not 5. Pick the best two.</li>
+<li>Write down the one thing you'd do differently & the strongest objection to it.</li>
+</ol></div>
+</section>
+<footer>Questions after today: <b>Taylor Guillory</b>, Business and AI Enablement Manager. Specificity in, specificity out.</footer>
+</main>
+<script>
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".copy"); if(!b) return;
+  var el=document.getElementById(b.dataset.target); var text=el.textContent;
+  function ok(){b.textContent="Copied";b.classList.add("done");setTimeout(function(){b.textContent="Copy prompt";b.classList.remove("done")},1800)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=window.getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selected - now copy";}
+  try{ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(ok,fallback);} else fallback(); }catch(err){fallback();}
+});
+</script>
+
+</body>
+</html>
